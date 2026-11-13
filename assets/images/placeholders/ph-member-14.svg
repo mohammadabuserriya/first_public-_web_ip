@@ -1,0 +1,28 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-label="IP TEAM sample member photo placeholder">
+  <defs>
+    <linearGradient id="m13" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4FA3D8"/>
+      <stop offset="1" stop-color="#132B3F"/>
+    </linearGradient>
+    <pattern id="md13" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.3" fill="#ffffff" fill-opacity="0.12"/>
+    </pattern>
+    <radialGradient id="mr13" cx="0.5" cy="0.28" r="0.8">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="600" fill="#101827"/>
+  <rect width="600" height="600" fill="url(#m13)"/>
+  <rect width="600" height="600" fill="url(#mr13)"/>
+  <rect width="600" height="600" fill="url(#md13)"/>
+  <circle cx="300" cy="330" r="235" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="2"/>
+  <g fill="#ffffff" fill-opacity="0.30">
+    <circle cx="300" cy="238" r="92"/>
+    <path d="M118 600c0-104 81-176 182-176s182 72 182 176z"/>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="212" y="524" width="176" height="38" rx="19" fill="#000000" fill-opacity="0.45"/>
+    <text x="300" y="549" fill="#F5B544" font-size="17" font-weight="700" letter-spacing="3" text-anchor="middle">SAMPLE</text>
+  </g>
+</svg>

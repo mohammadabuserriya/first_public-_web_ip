@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event details — IP TEAM</title>
+  <meta name="description" content="Full details, rules, schedule and registration for an IP TEAM event.">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Event details — IP TEAM">
+  <meta property="og:description" content="Full details, rules, schedule and registration for an IP TEAM event.">
+  <meta property="og:image" content="assets/images/logo.jpeg">
+  <link rel="icon" href="assets/images/logo.jpeg" type="image/jpeg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <noscript><style>
+    .reveal { opacity: 1 !important; transform: none !important; }
+    .nav__menu { position: static !important; opacity: 1 !important; visibility: visible !important;
+      pointer-events: auto !important; transform: none !important; flex-wrap: wrap; background: transparent;
+      box-shadow: none; border: 0; padding: 0; }
+    .nav__toggle { display: none !important; }
+    #event-notfound { display: block !important; }
+    #event-notfound::after { content: " — event.html?id=EVENT_ID requires JavaScript to render the detail view.";
+      display: block; margin-block-start: 14px; color: #7b869b; }
+  </style></noscript>
+</head>
+
+<body data-page="events" data-meta="event">
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to main content</a>
+
+  <header class="nav" id="site-nav">
+    <div class="container nav__inner">
+      <a class="brand" href="index.html" aria-label="IP TEAM home">
+        <span class="brand__plate">
+          <img class="brand__logo" src="assets/images/logo.jpeg" alt="IP TEAM — Innovation Pioneers Team official logo"
+               width="158" height="55" data-fallback>
+        </span>
+        <span class="brand__fallback"><b>IP</b> TEAM</span>
+      </a>
+
+      <nav class="nav__menu" id="site-menu" aria-label="Main navigation" data-i18n-aria="a11y.nav">
+        <a class="nav__link" data-nav="home" href="index.html" data-i18n="nav.home">Home</a>
+        <a class="nav__link" data-nav="about" href="about.html" data-i18n="nav.about">About</a>
+        <a class="nav__link" data-nav="team" href="team.html" data-i18n="nav.team">Our Team</a>
+        <a class="nav__link" data-nav="events" href="events.html" data-i18n="nav.events">Events</a>
+        <a class="nav__link" data-nav="achievements" href="achievements.html" data-i18n="nav.achievements">Achievements</a>
+        <a class="nav__link" data-nav="contact" href="index.html#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="lang" role="group" aria-label="Choose language" data-i18n-aria="a11y.language">
+        <button class="lang__btn" type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button class="lang__btn" type="button" data-lang="ar" aria-pressed="false">AR</button>
+      </div>
+
+      <button class="nav__toggle" type="button" data-nav-toggle aria-expanded="false"
+              aria-controls="site-menu" aria-label="Open navigation menu" data-i18n-aria="a11y.menu">
+        <span class="nav__toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero__inner">
+          <span class="eyebrow" data-i18n="events.previewEyebrow">What's next</span>
+          <h1 data-i18n="meta.event.title">Event details</h1>
+          <p data-i18n="event.aboutTitle">About this event</p>
+          <div class="btn-row" style="margin-block-start:26px">
+            <button type="button" class="btn btn--outline-light" id="event-back">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+              <span data-i18n="common.backToEvents">Back to events</span>
+            </button>
+            <a class="btn btn--ghost" href="events.html" data-i18n="nav.events">Events</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="container">
+
+        <!-- Not found -->
+        <div class="empty" id="event-notfound" hidden>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 8v4M12 16h.01"/></svg>
+          <h3 data-i18n="event.notFoundTitle">Event not found</h3>
+          <p data-i18n="event.notFoundText">The event id in the address does not exist.</p>
+          <a class="btn btn--primary" href="events.html" data-i18n="common.backToEvents">Back to events</a>
+        </div>
+
+        <!-- Detail -->
+        <div id="event-view" hidden>
+          <div class="detail-top">
+            <div class="detail-hero" id="event-hero"></div>
+            <aside class="detail-side" id="event-side"></aside>
+          </div>
+
+          <div class="detail-content" id="event-content"></div>
+
+          <section class="mt-lg" id="event-related" hidden></section>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="site-footer"></footer>
+
+  <script src="js/data/config.js"></script>
+  <script src="js/data/members.js"></script>
+  <script src="js/data/events.js"></script>
+  <script src="js/data/achievements.js"></script>
+  <script src="js/data/translations.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pages/event-detail.js"></script>
+</body>
+</html>

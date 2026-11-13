@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IP TEAM — Innovation Pioneers Team</title>
+  <meta name="description" content="IP TEAM is a university student team for computer science, programming, technology, competitions and workshops.">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="IP TEAM — Innovation Pioneers Team">
+  <meta property="og:description" content="A university student team for computer science, programming, technology, competitions and workshops.">
+  <meta property="og:image" content="assets/images/logo.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/images/logo.jpeg" type="image/jpeg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <noscript><style>
+    .reveal { opacity: 1 !important; transform: none !important; }
+    .nav__menu { position: static !important; opacity: 1 !important; visibility: visible !important;
+      pointer-events: auto !important; transform: none !important; flex-wrap: wrap; background: transparent;
+      box-shadow: none; border: 0; padding: 0; }
+    .nav__toggle { display: none !important; }
+    #site-footer::before { content: "JavaScript is disabled — the footer, cards and language switch need it.";
+      display: block; padding: 18px; text-align: center; color: #9fb0c8; }
+  </style></noscript>
+</head>
+
+<body data-page="home" data-meta="home">
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to main content</a>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="nav" id="site-nav">
+    <div class="container nav__inner">
+      <a class="brand" href="index.html" aria-label="IP TEAM home">
+        <span class="brand__plate">
+          <img class="brand__logo" src="assets/images/logo.jpeg" alt="IP TEAM — Innovation Pioneers Team official logo"
+               width="158" height="55" data-fallback>
+        </span>
+        <span class="brand__fallback"><b>IP</b> TEAM</span>
+      </a>
+
+      <nav class="nav__menu" id="site-menu" aria-label="Main navigation" data-i18n-aria="a11y.nav">
+        <a class="nav__link" data-nav="home" href="index.html" data-i18n="nav.home">Home</a>
+        <a class="nav__link" data-nav="about" href="about.html" data-i18n="nav.about">About</a>
+        <a class="nav__link" data-nav="team" href="team.html" data-i18n="nav.team">Our Team</a>
+        <a class="nav__link" data-nav="events" href="events.html" data-i18n="nav.events">Events</a>
+        <a class="nav__link" data-nav="achievements" href="achievements.html" data-i18n="nav.achievements">Achievements</a>
+        <a class="nav__link" data-nav="contact" href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="lang" role="group" aria-label="Choose language" data-i18n-aria="a11y.language">
+        <button class="lang__btn" type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button class="lang__btn" type="button" data-lang="ar" aria-pressed="false">AR</button>
+      </div>
+
+      <button class="nav__toggle" type="button" data-nav-toggle aria-expanded="false"
+              aria-controls="site-menu" aria-label="Open navigation menu" data-i18n-aria="a11y.menu">
+        <span class="nav__toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <span class="hero__glow hero__glow--1" aria-hidden="true"></span>
+      <span class="hero__glow hero__glow--2" aria-hidden="true"></span>
+
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__content">
+            <span class="hero__pill"><i aria-hidden="true"></i><span data-i18n="home.pill">University student team</span></span>
+
+            <h1 data-i18n-html="home.title">We build, we compete, and we <em>learn out loud</em>.</h1>
+
+            <p class="hero__desc" data-i18n="home.desc">
+              IP TEAM — Innovation Pioneers — is a student team focused on computer science, programming and technology.
+            </p>
+
+            <div class="btn-row hero__actions">
+              <a class="btn btn--yellow btn--lg" href="events.html">
+                <span data-i18n="common.exploreEvents">Explore events</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+              <a class="btn btn--outline-light btn--lg" href="team.html" data-i18n="common.meetTeam">Meet our team</a>
+            </div>
+
+            <div class="hero__meta" id="hero-meta"></div>
+          </div>
+
+          <div class="hero__visual">
+            <div class="orb">
+              <span class="orb__ring orb__ring--spin" aria-hidden="true"></span>
+              <span class="orb__ring orb__ring--b orb__ring--spin-rev" aria-hidden="true"></span>
+              <div class="orb__core">
+                <span class="orb__logo-plate">
+                  <img id="hero-logo" src="assets/images/logo.jpeg" alt="IP TEAM — Innovation Pioneers Team official logo"
+                       width="280" height="98" data-fallback>
+                </span>
+              </div>
+              <div id="hero-chips"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__strip" id="hero-strip-wrap">
+          <div id="hero-strip"></div>
+          <span class="hero__scroll" aria-hidden="true"><span></span><span data-i18n="home.scroll">Scroll</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT PREVIEW ================= -->
+    <section class="section section--tint" id="about-preview">
+      <div class="container">
+        <div class="split">
+          <div class="split__body reveal reveal--left">
+            <span class="eyebrow" data-i18n="about.eyebrow">Who we are</span>
+            <h2 data-i18n="about.title">A team that turns curiosity into working projects</h2>
+            <p class="lead" data-i18n="about.text">Everything below is sample content.</p>
+
+            <ul class="checklist">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                <span><b data-i18n="about.v1.title">Programming first</b> — <span data-i18n="about.v1.text">Competitive programming, web development and tooling.</span></span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                <span><b data-i18n="about.v2.title">Innovation by default</b> — <span data-i18n="about.v2.text">Every workshop ends with something built.</span></span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                <span><b data-i18n="about.v3.title">Teamwork that scales</b> — <span data-i18n="about.v3.text">Eleven roles, one shared roadmap.</span></span>
+              </li>
+            </ul>
+
+            <div class="btn-row" style="margin-block-start:30px">
+              <a class="btn btn--primary" href="about.html">
+                <span data-i18n="about.cta">Read more about us</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+              <span class="sample-chip" data-i18n="common.sampleData">Sample data</span>
+            </div>
+          </div>
+
+          <div class="split__media reveal reveal--right">
+            <div class="media-frame">
+              <img src="assets/images/placeholders/ph-gallery-01.svg" alt="Sample photo of the team at work"
+                   width="800" height="600" loading="lazy" decoding="async" data-fallback>
+              <div class="media-frame__badge">
+                <strong data-i18n="about.badgeValue">11 roles</strong>
+                <span data-i18n="about.badgeLabel">one shared roadmap</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STATS ================= -->
+    <section class="section section--dark" id="impact">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <div class="section-head__main">
+            <span class="eyebrow" data-i18n="stats.eyebrow">Team impact</span>
+            <h2 data-i18n="stats.title">Numbers that describe our rhythm</h2>
+            <p data-i18n="stats.text">These figures are placeholders.</p>
+          </div>
+          <span class="sample-chip" data-i18n="stats.sampleNote">Sample figures</span>
+        </div>
+        <div class="stats" id="stats-grid"></div>
+      </div>
+    </section>
+
+    <!-- ================= EVENTS PREVIEW ================= -->
+    <section class="section" id="events-preview">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__main">
+            <span class="eyebrow" data-i18n="events.previewEyebrow">What's next</span>
+            <h2 data-i18n="events.previewTitle">Upcoming events &amp; competitions</h2>
+            <p data-i18n="events.previewText">Register in two taps.</p>
+          </div>
+          <a class="btn btn--ghost" href="events.html">
+            <span data-i18n="events.previewCta">See all events</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div id="home-events"></div>
+      </div>
+    </section>
+
+    <!-- ================= MEMBERS PREVIEW ================= -->
+    <section class="section section--dark" id="team-preview">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__main">
+            <span class="eyebrow" data-i18n="team.previewEyebrow">The people</span>
+            <h2 data-i18n="team.previewTitle">Featured members</h2>
+            <p data-i18n="team.previewText">Our president, vice president and the leads.</p>
+          </div>
+          <a class="btn btn--outline-light" href="team.html">
+            <span data-i18n="team.previewCta">Meet the whole team</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div id="home-members"></div>
+      </div>
+    </section>
+
+    <!-- ================= ACHIEVEMENTS PREVIEW ================= -->
+    <section class="section section--tint" id="achievements-preview">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__main">
+            <span class="eyebrow" data-i18n="ach.previewEyebrow">Results</span>
+            <h2 data-i18n="ach.previewTitle">Achievements &amp; milestones</h2>
+            <p data-i18n="ach.previewText">Awards and successful editions.</p>
+          </div>
+          <a class="btn btn--ghost" href="achievements.html">
+            <span data-i18n="ach.previewCta">View all achievements</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div id="home-achievements"></div>
+      </div>
+    </section>
+
+    <!-- ================= GALLERY ================= -->
+    <section class="section section--dark" id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__main">
+            <span class="eyebrow" data-i18n="gallery.eyebrow">Moments</span>
+            <h2 data-i18n="gallery.title">Photo gallery</h2>
+            <p data-i18n="gallery.text">Placeholder photos stand in for real team pictures.</p>
+          </div>
+          <span class="sample-chip" data-i18n="gallery.sampleNote">Placeholder images</span>
+        </div>
+        <div id="home-gallery"></div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <div class="section-head__main">
+            <span class="eyebrow" data-i18n="contact.eyebrow">Get in touch</span>
+            <h2 data-i18n="contact.title">Talk to the team</h2>
+            <p data-i18n="contact.text">Questions about a workshop, a competition, or joining IP TEAM?</p>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <div>
+            <div class="contact-info" id="contact-info"></div>
+
+            <div class="panel" style="margin-block-start:20px">
+              <h3 data-i18n="contact.socialTitle">Follow the team</h3>
+              <div class="socials" id="contact-socials" style="margin-block-start:6px"></div>
+              <p class="field__hint" style="margin-block-start:14px" data-i18n="contact.socialNote">
+                Social links are sample placeholders.
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h3 data-i18n="contact.formTitle">Send a message</h3>
+            <p data-i18n="contact.formDesc">This form runs entirely in your browser.</p>
+
+            <form id="contact-form" novalidate>
+              <div class="form-grid">
+                <div class="field">
+                  <label class="field__label" for="c-name"><span data-i18n="contact.fullName">Full name</span> *</label>
+                  <input class="input" id="c-name" name="fullName" type="text" autocomplete="name"
+                         required data-i18n-ph="contact.fullNamePh">
+                  <span class="field__error" data-error-for="fullName"></span>
+                </div>
+
+                <div class="field">
+                  <label class="field__label" for="c-email"><span data-i18n="contact.emailLabel">Email address</span> *</label>
+                  <input class="input" id="c-email" name="email" type="email" autocomplete="email"
+                         required data-i18n-ph="contact.emailPh">
+                  <span class="field__error" data-error-for="email"></span>
+                </div>
+
+                <div class="field field--full">
+                  <label class="field__label" for="c-subject"><span data-i18n="contact.subject">Subject</span> *</label>
+                  <select class="select" id="c-subject" name="subject" required>
+                    <option value="" data-i18n="contact.subjectPh">What is it about?</option>
+                    <option value="general">General question</option>
+                    <option value="workshop">Workshop</option>
+                    <option value="competition">Competition</option>
+                    <option value="join">Joining the team</option>
+                    <option value="sponsor">Sponsorship</option>
+                  </select>
+                  <span class="field__error" data-error-for="subject"></span>
+                </div>
+
+                <div class="field field--full">
+                  <label class="field__label" for="c-message"><span data-i18n="contact.message">Message</span> *</label>
+                  <textarea class="textarea" id="c-message" name="message" rows="5" required
+                            data-i18n-ph="contact.messagePh"></textarea>
+                  <span class="field__error" data-error-for="message"></span>
+                </div>
+
+                <div class="field field--full">
+                  <label class="checkbox">
+                    <input type="checkbox" name="agree" required>
+                    <span data-i18n="contact.agree">I understand this is a prototype.</span>
+                  </label>
+                  <span class="field__error" data-error-for="agree"></span>
+                </div>
+              </div>
+
+              <p class="form-note" style="margin-block-start:16px" data-i18n="common.demoNote">
+                Front-end demo only.
+              </p>
+
+              <div class="form-actions">
+                <button class="btn btn--primary" type="submit">
+                  <span data-i18n="contact.send">Send message</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></svg>
+                </button>
+              </div>
+            </form>
+
+            <div class="reg-success" id="contact-success" hidden tabindex="-1" role="status">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#2f9e6e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.1V12a10 10 0 1 1-5.9-9.1M22 4L12 14.01l-3-3"/></svg>
+              <h3 data-i18n="contact.successTitle">Message validated</h3>
+              <p data-i18n="contact.successText">Nothing was transmitted.</p>
+              <button type="button" class="btn btn--ghost btn--sm" id="contact-again" data-i18n="contact.again">
+                Write another
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="stack-cta mt-lg reveal">
+          <div>
+            <h2 data-i18n="cta.title">Ready to build something worth remembering?</h2>
+            <p data-i18n="cta.text">Join a workshop, enter a competition.</p>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn--yellow" href="events.html" data-i18n="cta.primary">Explore events</a>
+            <a class="btn btn--outline-light" href="team.html" data-i18n="cta.secondary">Meet our team</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer" id="site-footer"></footer>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script src="js/data/config.js"></script>
+  <script src="js/data/members.js"></script>
+  <script src="js/data/events.js"></script>
+  <script src="js/data/achievements.js"></script>
+  <script src="js/data/translations.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pages/home.js"></script>
+</body>
+</html>

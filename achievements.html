@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Achievements — IP TEAM</title>
+  <meta name="description" content="Awards, successful events, competition participation and milestones of IP TEAM.">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Achievements — IP TEAM">
+  <meta property="og:description" content="Awards, successful events, competition participation and milestones of IP TEAM.">
+  <meta property="og:image" content="assets/images/logo.jpeg">
+  <link rel="icon" href="assets/images/logo.jpeg" type="image/jpeg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <noscript><style>
+    .reveal { opacity: 1 !important; transform: none !important; }
+    .nav__menu { position: static !important; opacity: 1 !important; visibility: visible !important;
+      pointer-events: auto !important; transform: none !important; flex-wrap: wrap; background: transparent;
+      box-shadow: none; border: 0; padding: 0; }
+    .nav__toggle { display: none !important; }
+    .filters { display: none !important; }
+  </style></noscript>
+</head>
+
+<body data-page="achievements" data-meta="achievements">
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to main content</a>
+
+  <header class="nav" id="site-nav">
+    <div class="container nav__inner">
+      <a class="brand" href="index.html" aria-label="IP TEAM home">
+        <span class="brand__plate">
+          <img class="brand__logo" src="assets/images/logo.jpeg" alt="IP TEAM — Innovation Pioneers Team official logo"
+               width="158" height="55" data-fallback>
+        </span>
+        <span class="brand__fallback"><b>IP</b> TEAM</span>
+      </a>
+
+      <nav class="nav__menu" id="site-menu" aria-label="Main navigation" data-i18n-aria="a11y.nav">
+        <a class="nav__link" data-nav="home" href="index.html" data-i18n="nav.home">Home</a>
+        <a class="nav__link" data-nav="about" href="about.html" data-i18n="nav.about">About</a>
+        <a class="nav__link" data-nav="team" href="team.html" data-i18n="nav.team">Our Team</a>
+        <a class="nav__link" data-nav="events" href="events.html" data-i18n="nav.events">Events</a>
+        <a class="nav__link" data-nav="achievements" href="achievements.html" data-i18n="nav.achievements">Achievements</a>
+        <a class="nav__link" data-nav="contact" href="index.html#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="lang" role="group" aria-label="Choose language" data-i18n-aria="a11y.language">
+        <button class="lang__btn" type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button class="lang__btn" type="button" data-lang="ar" aria-pressed="false">AR</button>
+      </div>
+
+      <button class="nav__toggle" type="button" data-nav-toggle aria-expanded="false"
+              aria-controls="site-menu" aria-label="Open navigation menu" data-i18n-aria="a11y.menu">
+        <span class="nav__toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero__inner">
+          <span class="eyebrow" data-i18n="ach.previewEyebrow">Results</span>
+          <h1 data-i18n="ach.pageTitle">Achievements</h1>
+          <p data-i18n="ach.pageDesc">Awards, successful events, competition entries and milestones.</p>
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html" data-i18n="ach.crumbHome">Home</a>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page" data-i18n="nav.achievements">Achievements</span>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="container">
+
+        <div class="section-head">
+          <div class="section-head__main">
+            <span class="eyebrow" data-i18n="ach.filters">Filter achievements</span>
+            <h2 data-i18n="ach.listTitle">All achievements</h2>
+          </div>
+          <span class="sample-chip" data-i18n="ach.sampleNote">Sample records</span>
+        </div>
+
+        <div class="filters reveal">
+          <div class="filters__row">
+            <span class="filters__label" data-i18n="filter.category">Category</span>
+            <div class="chips" id="ach-cat-chips"></div>
+          </div>
+          <div class="filters__meta">
+            <span id="ach-count"></span>
+          </div>
+        </div>
+
+        <div id="ach-grid"></div>
+
+        <!-- Layout is intentionally a plain grid today; a timeline variant
+             (.timeline / .timeline__item) already exists in css/pages.css
+             for a future redesign that needs no data changes. -->
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="stack-cta reveal">
+          <div>
+            <h2 data-i18n="cta.title">Ready to build something worth remembering?</h2>
+            <p data-i18n="footer.sampleNote">Content marked as sample must be replaced before publishing.</p>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn--yellow" href="events.html" data-i18n="cta.primary">Explore events</a>
+            <a class="btn btn--outline-light" href="team.html" data-i18n="cta.secondary">Meet our team</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="site-footer"></footer>
+
+  <script src="js/data/config.js"></script>
+  <script src="js/data/members.js"></script>
+  <script src="js/data/events.js"></script>
+  <script src="js/data/achievements.js"></script>
+  <script src="js/data/translations.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pages/achievements.js"></script>
+</body>
+</html>

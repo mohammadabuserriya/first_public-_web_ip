@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found — IP TEAM</title>
+  <meta name="description" content="The page you are looking for does not exist.">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/images/logo.jpeg" type="image/jpeg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <noscript><style>
+    .nav__menu { position: static !important; opacity: 1 !important; visibility: visible !important;
+      pointer-events: auto !important; transform: none !important; flex-wrap: wrap; background: transparent;
+      box-shadow: none; border: 0; padding: 0; }
+    .nav__toggle { display: none !important; }
+  </style></noscript>
+</head>
+
+<body data-page="home" data-meta="404">
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to main content</a>
+
+  <header class="nav" id="site-nav">
+    <div class="container nav__inner">
+      <a class="brand" href="index.html" aria-label="IP TEAM home">
+        <span class="brand__plate">
+          <img class="brand__logo" src="assets/images/logo.jpeg" alt="IP TEAM — Innovation Pioneers Team official logo"
+               width="158" height="55" data-fallback>
+        </span>
+        <span class="brand__fallback"><b>IP</b> TEAM</span>
+      </a>
+
+      <nav class="nav__menu" id="site-menu" aria-label="Main navigation" data-i18n-aria="a11y.nav">
+        <a class="nav__link" data-nav="home" href="index.html" data-i18n="nav.home">Home</a>
+        <a class="nav__link" data-nav="about" href="about.html" data-i18n="nav.about">About</a>
+        <a class="nav__link" data-nav="team" href="team.html" data-i18n="nav.team">Our Team</a>
+        <a class="nav__link" data-nav="events" href="events.html" data-i18n="nav.events">Events</a>
+        <a class="nav__link" data-nav="achievements" href="achievements.html" data-i18n="nav.achievements">Achievements</a>
+        <a class="nav__link" data-nav="contact" href="index.html#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="lang" role="group" aria-label="Choose language" data-i18n-aria="a11y.language">
+        <button class="lang__btn" type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button class="lang__btn" type="button" data-lang="ar" aria-pressed="false">AR</button>
+      </div>
+
+      <button class="nav__toggle" type="button" data-nav-toggle aria-expanded="false"
+              aria-controls="site-menu" aria-label="Open navigation menu" data-i18n-aria="a11y.menu">
+        <span class="nav__toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="notfound">
+      <div class="container">
+        <div class="notfound__code" aria-hidden="true">404</div>
+        <h1 data-i18n="nf.title">This page does not exist</h1>
+        <p data-i18n="nf.text">The address may be mistyped, or the page may have moved.</p>
+        <div class="btn-row">
+          <a class="btn btn--yellow btn--lg" href="index.html" data-i18n="nf.btn">Back to home</a>
+          <a class="btn btn--outline-light btn--lg" href="events.html" data-i18n="nf.btn2">Browse events</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="site-footer"></footer>
+
+  <script src="js/data/config.js"></script>
+  <script src="js/data/members.js"></script>
+  <script src="js/data/events.js"></script>
+  <script src="js/data/achievements.js"></script>
+  <script src="js/data/translations.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
